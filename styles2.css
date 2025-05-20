@@ -1,0 +1,90 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #4A90E2;
+    margin-top: 20px;
+}
+
+/* Container de grille pour les cours */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Style des cartes de cours en grille */
+.grid-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.grid-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 1.4em;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Lien de téléchargement */
+.download-link {
+    display: block;
+    padding: 15px;
+    background-color: #4A90E2;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.download-link:hover {
+    background-color: #357ABD;
+}
+
+/* Style du bouton en forme d'icône */
+.icon-button {
+    background-color: #4CAF50; /* Couleur de fond */
+    color: white; /* Couleur de l'icône */
+    border: none;
+    border-radius: 50%; /* Bouton circulaire */
+    width: 50px; /* Taille du bouton */
+    height: 50px; /* Taille du bouton */
+    font-size: 24px; /* Taille de l'icône */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Effet au survol */
+.icon-button:hover {
+    background-color: #45a049;
+}
